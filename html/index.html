@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to my SSL secured Nginx website</title>
+<style>
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: navy;
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px gray;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Welcome to my SSL secured Nginx website</h1>
+      <p>Click the button below to see a message:</p>
+      <button id="myBtn">Show message</button>
+      <p id="message" style="display: none;"></p>
+    </div>
+  </div>
+  <script>
+    var btn = document.getElementById("myBtn");
+    var message = document.getElementById("message");
+
+    btn.addEventListener("click", function() {
+      message.style.display = "block";
+      message.innerHTML = "This website is secured by SSL!";
+    });
+  </script>
+</body>
+</html>
