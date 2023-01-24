@@ -8,4 +8,6 @@ This project can be used as a starting point for developing and testing web appl
    - The certificate will be created at "./**yourDomain**.pem" and the key at "./**yourDomain**-key.pem"
 3. move the certificate and the key to "cert" folder
 4. run - docker-compose up -d
-<img width="1066" alt="Screenshot 2023-01-24 at 14 11 54" src="https://user-images.githubusercontent.com/123317116/214290735-0c0a5253-9dcf-49b6-b96b-73cf55fad47c.png">
+5. in etc/hosts - change localhost address (127.0.0.1) to the selected domain address - my was Dor.com
+
+![Screenshot 2023-01-24 at 14 31 17](https://user-images.githubusercontent.com/123317116/214292415-a89ad396-b784-4ec2-987b-c2d6b40e5343.png)
